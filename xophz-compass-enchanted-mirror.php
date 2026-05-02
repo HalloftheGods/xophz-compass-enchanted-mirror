@@ -14,6 +14,7 @@
  *
  * @wordpress-plugin
  * Category:          True North
+ * Group:             MA
  * Plugin Name:       Xophz Enchanted Mirror 
  * Plugin URI:        https://github.com/HalloftheGods/xophz-compass-enchanted-mirror
  * Description:       A site audience comparison tool that helps peer into how your site's audience is faring against other sites side-by-side. 
