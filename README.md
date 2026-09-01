@@ -43,7 +43,7 @@ A competitive benchmarking and performance analytics tool that helps peer into h
 
 ## Status
 
-🔴 Concept defined — awaiting full implementation.
+🔴 Concept defined - awaiting full implementation.
 
 ## Changelog
 
