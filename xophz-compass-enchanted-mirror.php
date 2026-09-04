@@ -54,8 +54,7 @@ function activate_xophz_compass_enchanted_mirror() {
  * This action is documented in includes/class-xophz-compass-enchanted-mirror-deactivator.php
  */
 function deactivate_xophz_compass_enchanted_mirror() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-xophz-compass-enchanted-mirror-deactivator.php';
-	Xophz_Compass_Enchanted_Mirror_Deactivator::deactivate();
+	Xophz_Compass_Enchanted_Mirror::deactivate();
 }
 
 register_activation_hook( __FILE__, 'activate_xophz_compass_enchanted_mirror' );
