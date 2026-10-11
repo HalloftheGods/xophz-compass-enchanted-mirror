@@ -123,6 +123,7 @@ class Xophz_Compass_Enchanted_Mirror extends Xophz_Compass_Plugin_Base {
 		 * The class responsible for defining all actions that occur in the admin area.
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-xophz-compass-enchanted-mirror-admin.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-xophz-compass-enchanted-mirror-pagespeed.php';
 
 		/**
 		 * The class responsible for defining all actions that occur in the public-facing
@@ -161,6 +162,10 @@ class Xophz_Compass_Enchanted_Mirror extends Xophz_Compass_Plugin_Base {
 		// $this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
 		$this->loader->add_action( 'admin_menu', $plugin_admin, 'addToMenu' );
 		$this->loader->add_action( 'rest_api_init', $plugin_admin, 'register_rest_endpoints' );
+
+		// PageSpeed Insights runs server-side so the Google key (google connector) never reaches the browser.
+		$plugin_pagespeed = new Xophz_Compass_Enchanted_Mirror_PageSpeed();
+		$this->loader->add_action( 'rest_api_init', $plugin_pagespeed, 'register_routes' );
 	}
 
 	/**
