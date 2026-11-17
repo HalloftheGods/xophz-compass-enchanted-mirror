@@ -19,8 +19,8 @@
  * Plugin URI:        https://github.com/HalloftheGods/xophz-compass-enchanted-mirror
  * Description:       A site audience comparison tool that helps peer into how your site's audience is faring against other sites side-by-side. 
  * Version:           26.10.12
- * Author:            Hall of the Gods, Inc.
- * Author URI:        http://www.hallofthegods.com/
+ * Author:            My Compass Consulting
+ * Author URI:        https://mycompassconsulting.com/
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       xophz-compass-enchanted-mirror
